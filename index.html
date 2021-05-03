@@ -6,44 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML5,CSS3,Bootstrap_4.6">
-    <meta name="author" content="Hossam Omara">
+    <meta name="author" content="Hossam Galal">
     <meta name="description" content="Free Website @ Route35">
     <title>Devfolio</title>
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="Images/apple-touch-icon.png">
 
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myScript.js"></script>
+
 </head>
 
 
 <body onscroll=change_bg()>
 
-    <!-- Home -->
+    <!-- ________________________Home ________________________ -->
     <div class="home vh-100">
         <div class="d-flex align-items-center justify-content-center text-center vh-100">
-            <div class="home-contents">
-                <h2>I am Morgan Freeman
+            <div class="home-contents mode-change">
+                <h2>I' am Hossam Galal
                 </h2>
                 <p>Web </p>
             </div>
-         
+
         </div>
-       
-        <div class="cover d-flex align-items-center justify-content-center">
-       
-        </div>
+
+        <div class="cover d-flex align-items-center justify-content-center"></div>
+        <!-- __________________ Nav Bar __________________ -->
 
         <div class="mynav-bar position-fixed" id="mynav">
 
 
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar">
-                    <a class="navbar-brand" href="#">Devfolio</a>
+                    <a class="navbar-brand mode-change" href="#">Devfolio</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -69,27 +67,31 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#blog">BLOG</a>
                             </li>
-                            <li class="nav-item">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    DROP DOWN
+                                    Dropdown link
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Drop Down 1</a>
-                                    <a class="dropdown-item" href="#">Deeo Drop Down</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action<a class="nav-link dropdown-toggle" href="#"
+                                            id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">Dropdown link
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
 
-                                    <a class="dropdown-item" href="#">Drop Down 3</a>
 
-                                    <a class="dropdown-item" href="#">Drop Down 4</a>
-
-                                    <a class="dropdown-item" href="#">Drop Down 5</a>
-
-
-
+                                    </a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
                             </li>
-                            </li>
+
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#contacts">CONTACTS</a>
                             </li>
@@ -97,18 +99,37 @@
                     </div>
                 </nav>
             </div>
+
+
+
+
         </div>
 
 
+        <div class="mode-options position-fixed d-flex">
+            <div class="color-options p-1 bg-secondary">
+                <h4>Mode: </h4>
+                <ul class="list-unstyled">
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                    <li class="colors"></li>
+                </ul>
+            </div>
+            <div class="mode-sider p-1">
+                <i class="fas fa-paint-brush"></i>
 
 
+
+
+            </div>
+        </div>
     </div>
 
 
-    <!-- About -->
+    <!-- ________________________ About ________________________ -->
 
     <div class="about p-5" id="about" style="background-color: #F5F5F5;">
-
 
         <div class="container bg-white">
 
@@ -216,7 +237,7 @@
     </div>
 
 
-<!-- Services -->
+    <!-- Services -->
 
     <div class="services p-5 text-center" id="services" style="background-color: #F5F5F5;">
 
@@ -378,7 +399,7 @@
 
     </div>
 
-<!-- Rates -->
+    <!-- Rates -->
 
     <div class="rates p-5">
 
@@ -1028,18 +1049,22 @@
 
     <div class="footer">
         <footer class="text-center text-white p-2">
-            <p>© Copyright DevFolio. All Rights Reserved
+            <p>© Copyright Hossam Galal. All Rights Reserved
 
             </p>
             <p>
-                Designed by BootstrapMade
+                Designed by Hossam Galal .
 
             </p>
         </footer>
     </div>
 
 
-
+    <!-- External Files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 
