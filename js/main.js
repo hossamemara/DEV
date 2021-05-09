@@ -30,3 +30,68 @@ $('.mode-sider').click(function()
     }
     
 })
+
+
+
+
+/* ____________________ On Scroll Enents Start ____________________ */
+
+/* _____________ Change Nav Bar Background Color  _____________ */
+
+$(window).scroll(function () {
+    let scrollOffset = $(window).scrollTop();
+    let carouselCaption = $('#about').offset().top;
+    if (scrollOffset > carouselCaption - 100) {
+        $('.mynav-bar').css({ 'backgroundColor': '#708090', 'transition': "0.5s all" })
+    }
+    else {
+
+        $('.mynav-bar').css({ 'backgroundColor': 'transparent', 'transition': "0.5s all" })
+
+    }
+})
+
+/* _____________ Move Smoothly To Sections  _____________ */
+
+$('.nav-link').click(function () {
+    let linkHref = $(this).attr('href');
+    let linkHrefOffset = $(linkHref).offset().top;
+    $('body,html').animate({ scrollTop: linkHrefOffset }, 1000)
+})
+
+$('#scroll-me').click(function () {
+    let linkHref = $(this).attr('href');
+    let linkHrefOffset = $(linkHref).offset().top;
+    $('body,html').animate({ scrollTop: linkHrefOffset }, 1000)
+})
+
+
+/* _____________ Back to Website Top  _____________ */
+
+$(window).scroll(function () {
+    let scrollOffset = $(window).scrollTop();
+
+    let to_top_btn = $('#about').offset().top;
+    if (scrollOffset > to_top_btn) {
+        $('.to-top-btn').fadeIn(1000);;
+
+    }
+    else {
+        $('.to-top-btn').fadeOut(1000);;
+
+    }
+})
+
+$('.to-top-btn').click(function()
+{
+    $('body,html').animate({ scrollTop: 0 }, 500)
+})
+
+
+/* _____________ Loader  _____________ */
+
+$(document).ready(function()
+{
+    $('#loader').fadeOut(1000,function(){$('body').css('overflow','visible')})
+    
+})

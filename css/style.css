@@ -5,6 +5,32 @@
     color: white;
 }
 
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #33445f;
+    z-index: 999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader i {
+    color: #C1A69D;
+}
+body {
+    overflow: hidden;
+}
+
+.to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999999;
+    display: none;
+}
 /*_____________ Coloe Palette Selectors Start ___________*/
 .mode-options
 {
@@ -61,7 +87,8 @@ display: inline-block;
     padding-left: 15px;
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 991px) {
     .navbar-nav {
         background-color: #fcfcfc;
         text-align: center;
@@ -210,16 +237,7 @@ display: inline-block;
     background-color: transparent;
 }
 
-/* .navbar-nav .nav-item .nav-link
-{
 
-    color: white;
-    font-weight: 500;
-    
-    padding-left: 25px;
-
-    
-} */
 
 .bold {
     font-weight: 700;
